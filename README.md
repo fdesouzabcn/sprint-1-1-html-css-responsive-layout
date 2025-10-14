@@ -1,14 +1,14 @@
-# Project Name
-  **Description**: A brief explanation of the project's objective.
+# Sprint 1: Web Layout and PHP
+  **Description**: In this practice (S1.01) we will have to make a Layout that must work on both desktop, mobile and tablet.
 
   ## 🛠 Technologies
-  - Frontend: React, Tailwind
-  - Backend: Java, MongoDB
+  - Frontend: HTML, CSS
+  - Backend: Not Applicable (N/A) at this theme/stage (S1.01).
 
   ## 🚀 Installation
-  1. Clone the repository: `git clone ...`
-  2. Install dependencies: `npm install`
-  3. Environment Variables: Create `.env` with...
+  1. Clone the repository: `git clone https://github.com/fdesouzabcn/sprint-1-1-html-css-responsive-layout.git`
+  2. Install dependencies: N/A
+  3. Environment Variables: N/A
 
   ## 📸 Demo
   [Link to Vercel/Netlify] or screenshots.
