@@ -12,7 +12,7 @@
 
   ## 📸 Demo
   Nivel 1 - Exercise 1
-  ![alt text](img\desktop.png)
+  ![alt text](img/desktop.png)
 
   Nivel 1 - Exercise 2
 
