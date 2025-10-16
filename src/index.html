@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>S1.01 Responsive Layout - HTML & CSS</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<!-- 
+     Algo me sale mal con el <link> arriba , 
+     TO DO: Revisar - mientras tanto usar <style> dentro del html 
+    -->
+    <style>
+    /* ----------------------------------- */
+    /* ---------- Base - Styles ---------- */
+    /* ----------------------------------- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: rgb(9, 9, 9);
+        text-align: left;
+        min-height: 100vh;
+        /* min-width: 100%; */
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+/* Common box styling for visibility */
+    /* div,article,section,header,footer,nav,logo,social,aside {
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: grey; 
+    } */
+
+    /* -------------------------- */
+    /* --------- Footer --------- */
+    /* -------------------------- */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(9, 9, 9);
+        margin: 10px;
+        padding: 10px;
+        /* max-width: 1200px; */
+    }
+    .footer-text {
+        background-color: #f6e58d;
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+    }
+    /* ------------------------------------- */
+    /* ---------Header - WRAPPER------------ */
+    /* ------------------------------------- */
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(9, 9, 9);
+        margin: 10px;
+        padding: 10px;
+        /* max-width: 1200px; */
+    }
+
+    /* -------- Header - MAIN ----------- */
+    .header-main-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        background-color: #0a3d62;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .header-main-container div {
+        /* display: flex; */
+        background-color: #ee5253;
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+        /* flex: 1 */
+    }
+
+    .site-header-logo, .site-header-social{
+        flex-grow: 1 
+    }
+    
+    .site-header-nav-menu{
+        flex-grow: 4
+    }
+
+    /* ---------Header - BANNER----------- */
+
+    .header-banner-container {
+        background-color: #ff9f43;
+        margin: 10px;
+        padding: 10px;        
+    }
+
+    .header-banner {
+        background-color: #fdcb6e;
+        margin: 10px;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* ------------------------------------- */
+    /* ----- Main Content - WRAPPER -------- */
+    /* ------------------------------------- */
+
+     .main-content-wrapper {
+        display: flex;
+        /* ------------------- */
+        flex-flow: row wrap;
+        /* ------------------- */
+        justify-content: space-evenly;
+        background-color: rgb(9, 9, 9);
+        margin: 10px;
+        padding: 10px;
+        max-width: 1200px;
+    }
+
+    /* .articles-navigation-container, .sidebar{
+        background-color: #404f6c;
+    } */
+
+    /* ------ Articles and Navigation ------ */
+
+   
+    .articles-navigation-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        /* gap: 10px; */
+        background-color: #404f6c;
+        margin: 10px;
+        padding: 10px;
+    }
+    /* ---------Article - GRID----------- */
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 articles per row */
+        /* grid-template-columns: auto auto; */
+        gap: 15px;
+        /* flex-grow: 1;  */
+        /* Ensures it fills space above navigation */
+        margin: 10px;
+        padding: 0px;
+    }
+
+    /* ---------Article - ITEM ----------- */
+
+    .article-grid article {
+        background-color: #2980b9;
+        /* margin: 10px; */
+        padding: 15px;
+        font-size: 18px;
+        /* flex: 1 */
+    }
+
+    /* ------ Navigation - Main Content ------ */
+    .main-content-nav-menu {
+        background-color: #82ccdd;
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    /* --------- Sidebar ----------- */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 0.28;
+        background-color: #e74c3c;
+        margin: 10px;
+        padding: 15px;
+    }
+
+ /* --------- Sidebar - ITEM ----------- */
+    .sidebar div{
+        display: flex;
+        flex-direction: column;
+        background-color: #f1c40f;
+        padding: 15px;
+        font-size: 18px;
+    }
+    </style>
+</head>
+
+<body>  
+  <div class="header-wrapper"> 
+      <div class="header-main-container">
+
+          <div class="site-header-logo">.logo</div>
+          <div class="site-header-nav-menu">.nav</div>
+          <div class="site-header-social">.social</div>
+      </div> <!-- End of .main-head-grouped-items -->
+      <div class="header-banner-container">
+          <div class="header-banner">.banner</div>
+      </div> <!-- End of .site-header-banner-container -->
+  </div> <!-- End of .site-header-wrapper -->
+
+  <div class="main-content-wrapper"> 
+    <div class="articles-navigation-container">
+        <div class="article-grid">
+            <article class="article-1.card">.article</article>
+            <article class="article-2.card">.article</article>
+            <article class="article-3.card">.article</article>
+            <article class="article-4.card">.article</article>
+        </div> <!-- End Article Grid -->
+        <div class="main-content-nav-menu">.navigation</div>
+    </div> <!-- End of .articles-navigation -->
+      <aside class="sidebar"> 
+        <div class="publicidad-1">.publicidad</div>
+        <div class="publicidad-2">.publicidad</div>
+       </aside><!-- End of .aside-wrapper -->
+  </div> <!-- End of .main-content-wrapper -->
+  <footer> <!-- Footer-->
+    <div class="footer-text">.footer</div>
+  </footer> <!-- End Footer-->
+  
+
+</body>
+</html>
