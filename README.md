@@ -17,4 +17,5 @@
   Nivel 1 - Exercise 2 - Responsive a Tablet (768 px)
   ![tablet_768](img/tablet_768px.png)
 
-  Nivel 1 - Exercise 3
+  Nivel 1 - Exercise 3 - Responsive a Small Devices (≤480px)
+ ![small_devices_480](img/small_devices_480px.png)
