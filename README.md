@@ -11,9 +11,10 @@
   3. Environment Variables: N/A
 
   ## 📸 Demo
-  Nivel 1 - Exercise 1
-  ![alt text](img/desktop.png)
+  Nivel 1 - Exercise 1 - Maquetacion Desktop (1200px)
+  ![desktop_1200](img/desktop.png)
 
-  Nivel 1 - Exercise 2
+  Nivel 1 - Exercise 2 - Responsive a Tablet (768 px)
+  ![tablet_768](img/tablet_768px.png)
 
   Nivel 1 - Exercise 3

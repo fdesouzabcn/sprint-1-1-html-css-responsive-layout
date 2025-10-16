@@ -187,21 +187,45 @@
         padding: 15px;
     }
 
- /* --------- Sidebar - ITEM ----------- */
+    /* --------- Sidebar - ITEM ----------- */
     .sidebar div{
         display: flex;
         flex-direction: column;
+        /* flex: 1; */
         background-color: #f1c40f;
         padding: 15px;
         font-size: 18px;
     }
+
+    /* ----------------------------------------------- */
+    /* ---------------- Media Queries ---------------- */
+    /* ----------------------------------------------- */
+
+
+    /* ---------------- Tablet Screens ---------------- */
+
+    @media screen and (max-width: 768px) {
+
+     /* Stack Header items and Sidebar vertically */
+        .header-main-container,.main-content-wrapper {
+            flex-direction: column;
+        }
+        
+     /* Article Grid layout - Single Column - Stacking articles vertically */
+        .article-grid {
+            grid-template-columns: 1fr; /* Stack articles vertically */
+        }
+    }    
+
+    /* ---------------- Mobile Screens---------------- */
+
+
     </style>
 </head>
 
 <body>  
   <div class="header-wrapper"> 
       <div class="header-main-container">
-
           <div class="site-header-logo">.logo</div>
           <div class="site-header-nav-menu">.nav</div>
           <div class="site-header-social">.social</div>
@@ -226,6 +250,7 @@
         <div class="publicidad-2">.publicidad</div>
        </aside><!-- End of .aside-wrapper -->
   </div> <!-- End of .main-content-wrapper -->
+
   <footer> <!-- Footer-->
     <div class="footer-text">.footer</div>
   </footer> <!-- End Footer-->
