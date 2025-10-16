@@ -202,23 +202,23 @@
     /* ----------------------------------------------- */
 
 
-    /* ---------------- Tablet Screens ---------------- */
+    /* ---------------- Tablet Screens (≤768px) ---------------- */
 
     @media screen and (max-width: 768px) {
-
      /* Stack Header items and Sidebar vertically */
         .header-main-container,.main-content-wrapper {
             flex-direction: column;
         }
-        
-     /* Article Grid layout - Single Column - Stacking articles vertically */
+    }    
+
+     /* ---------------- Mobile Screens (≤480px) ---------------- */
+
+    @media screen and (max-width: 480px) {
+    /* Stack Articles vertically - Article-GRID*/
         .article-grid {
             grid-template-columns: 1fr; /* Stack articles vertically */
         }
-    }    
-
-    /* ---------------- Mobile Screens---------------- */
-
+    } 
 
     </style>
 </head>
